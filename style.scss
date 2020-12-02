@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
+}
+
+header {
+  display: flex;
+
+  .header_column-left {
+    width: 60%;
+    padding: 20px 50px;
+
+    .header-content {
+      width: 800px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: #0f0f2b;
+
+      .header-content_title {
+        font-size: 56px;
+        margin-bottom: 15px;
+      }
+
+      .header-content_subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .header-content_button {
+        all: unset;
+        height: 70px;
+        background-color: #221d53;
+        color: #ffffff;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .header_column-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    .nav-bar {
+      background-color: #221d53;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 20px;
+
+      a {
+        color: #b6a9fe;
+        text-decoration: none;
+        margin: 0 20px;
+
+        &.active {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .illustration {
+      width: 100%;
+    }
+  }
+}
+
+.news-letter {
+  background-color: #221d53;
+  padding: 100px;
+  display: flex;
+
+  .news-letter_column-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+
+    .news-letter-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .news-letter-title {
+      font-size: 56px;
+      margin-bottom: 15px;
+    }
+
+    .news-letter-subtitle {
+      font-size: 18px;
+      color: #b6a9fe;
+    }
+  }
+
+  .news-letter_column-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .news-letter_row {
+      .news-letter_input {
+        all: unset;
+        height: 60px;
+        background-color: #ffffff;
+        color: #0f0f2b;
+        width: 400px;
+        padding: 0 20px;
+        margin-bottom: 15px;
+      }
+
+      .news-letter_button {
+        all: unset;
+        background-color: #442eba;
+        width: 150px;
+        height: 60px;
+        color: #ffffff;
+        text-align: center;
+        margin-left: 15px;
+      }
+
+      .no-spam {
+        color: #b6a9fe;
+      }
+    }
+  }
+}
